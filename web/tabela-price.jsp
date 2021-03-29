@@ -3,7 +3,7 @@
     Created on : 22 de mar. de 2021, 16:37:07
     Author     : cutekah
 --%>
-
+<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
@@ -12,7 +12,7 @@
     int vp = 0;
     double taxa = 0;
     double meses = 0;
-    
+    DecimalFormat df = new DecimalFormat("0.00");
     double valorn = 0;
     double valormenos = 0;
     double pmt = 0;
@@ -76,10 +76,10 @@
                     devedor = devedor - amor;
                     
                     if (i == meses) {
-                        out.println("<tr><th>"+ i + "</th><th>" + pmt + "</th><th>" + amor + "</th><th>" + juros + "</th><th> 0.01 </th><tr>");
+                        out.println("<tr><th>"+ df.format(i) + "</th><th>" + df.format(pmt) + "</th><th>" + df.format(amor) + "</th><th>" + df.format(juros) + "</th><th> 0.01 </th><tr>");
                         break;
                     }
-                    out.println("<tr><th>" + i + "</th><th>" + pmt + "</th><th>" + amor + "</th><th>" + juros + "</th><th>" + devedor + "</th><tr>");
+                    out.println("<tr><th>" + df.format(i) + "</th><th>" + df.format(pmt) + "</th><th>" + df.format(amor) + "</th><th>" + df.format(juros) + "</th><th>" + df.format(devedor) + "</th><tr>");
                 }
                 
                     
