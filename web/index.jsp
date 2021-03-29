@@ -15,8 +15,8 @@
         <%@include file="WEB-INF/jspf/header.jspf" %>
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <h1>Identificação</h1>
-        <p><b>Nome:</b> Karina Namie Yamamoto Cardoso</p>
-        <p><b>RA:</b>1290481922021</p>
+        <p>Nome:Karina Namie Yamamoto Cardoso</p>
+        <p>RA:1290481922021</p>
         <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
