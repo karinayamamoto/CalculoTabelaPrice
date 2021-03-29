@@ -61,6 +61,10 @@
             pmt = (vp / valormenos);
         %>
         
+        <% if(errorMessage != null){ %>
+        <div style="color: red;"><%= errorMessage %></div>
+        <%}else{%>
+        
         <table border="1">
             <tr><th>N</th><th>Prestação</th><th>Amortização</th><th>Juros</th><th>Saldo Devedor</th></tr>
             <tr><th>-</th><th>R$</th><th>R$</th><th>R$</th><th>R$</th></tr>
@@ -85,7 +89,7 @@
                     
             %>
         </table>
-        
+        <% }%>
         <br>
         
         <%@include file="WEB-INF/jspf/footer.jspf"%>
